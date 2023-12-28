@@ -1,0 +1,65 @@
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 2rem;
+    border: 2px 0 solid #000;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: 2px #ff0011 line-through;
+}
+
+section#Container {
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Container>div.content {
+    margin: 0 auto;
+}
+
+#Container>div.content>img {
+    height: 400px;
+    width: auto;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+#Container .content>h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: 1.5px #000 underline;
+    color: #f0c104;
+    padding: 2% 0;
+}
+
+#Container div.btn>a {
+    padding: 1rem 3rem;
+    background-color: #f0c104;
+    border-radius: 0.6rem;
+    border: .8px solid #000;
+}
+
+/*
+=======Model Box======
+1) width = largura
+2) height = altura
+3) margin = espaçamento externo
+4) padding = espaçamento interno
+5) border = borda
+
+=======================
+*/
