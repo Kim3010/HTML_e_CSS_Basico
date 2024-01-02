@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #ddd;
+}
+
+header {
+    width: auto;
+    max-height: 60vh;
+    min-height: 30vh;
+    background-image: url(/img/carl-raw-m3hn2Kn5Bns-unsplash.jpg);
+    background-position: center;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    margin: 0;
+    border-bottom: 2px solid #48ff00;
+}
+
+.h-content h1 {
+    color: #48ff00;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 4rem;
+    gap: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.h-content .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    height: 1.5rem;
+    margin-top: 3rem;
+}
+
+.h-content .navbar ul {
+    list-style: none;
+    display: inline-flex;
+
+}
+
+.navbar ul li {
+    position: relative;
+    padding: 0 12px;
+}
+
+section#Main {
+    max-height: 80vh;
+    max-width: 100%;
+    margin: 2%;
+}
+
+#Main>.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 20px;
+}
+
+#Main .container .card {
+    width: 400px;
+    height: 350px;
+    border: 2px solid #48ff00;
+    border-radius: 1rem;
+    background-color: #000;
+}
+
+.card h2 {
+    z-index: 1;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    width: auto;
+    background-color: rgba(255, 221, 0, .5);
+    border-radius: 12px 12px 0 0;
+}
+
+.card[name="fig1"] {
+    background-image: url(/img/pictures-arcade/pacman.jpeg);
+    background-repeat: cover;
+    background-position: center;
+}
+
+
+.card[name="fig2"] {
+    background-image: url(/img/pictures-arcade/donkeyKong.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card[name="fig3"] {
+    background-image: url(/img/pictures-arcade/bomberman.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
